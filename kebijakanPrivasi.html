@@ -29,10 +29,6 @@
   --shadow-sm:0 8px 20px rgba(15,23,42,.05);
   --shadow-md:0 15px 35px rgba(15,23,42,.08);
 
-  --radius-xl:34px;
-  --radius-lg:28px;
-  --radius-md:22px;
-
 }
 
 *{
@@ -55,6 +51,7 @@ body{
     linear-gradient(to bottom,#f8fbff,#eef5fb);
 
   color:var(--text);
+
   overflow-x:hidden;
 
 }
@@ -134,8 +131,11 @@ body{
 }
 
 .back-btn:hover{
+
   transform:translateY(-3px);
+
   box-shadow:var(--shadow-sm);
+
 }
 
 /* =========================================
@@ -178,6 +178,7 @@ body{
 .hero h1{
 
   font-size:64px;
+
   line-height:1.05;
 
   letter-spacing:-2px;
@@ -201,103 +202,102 @@ body{
 }
 
 /* =========================================
-   POLICY CARD
+   SINGLE POLICY SECTION
 ========================================= */
 
-.policy-wrapper{
+.policy-section{
 
-  display:flex;
-  flex-direction:column;
-  gap:28px;
+  background:rgba(255,255,255,.92);
 
-  margin-top:40px;
-  margin-bottom:100px;
-
-}
-
-.policy-card{
-
-  background:rgba(255,255,255,.9);
-
-  backdrop-filter:blur(10px);
+  backdrop-filter:blur(12px);
 
   border:1px solid rgba(255,255,255,.7);
 
-  border-radius:32px;
+  border-radius:38px;
 
-  padding:42px;
+  padding:55px;
 
-  box-shadow:var(--shadow-sm);
+  margin-bottom:90px;
 
-  transition:.3s;
+  box-shadow:var(--shadow-md);
 
 }
 
-.policy-card:hover{
+.policy-block{
+  margin-bottom:50px;
+}
 
-  transform:translateY(-4px);
-  box-shadow:var(--shadow-md);
+.policy-block:last-child{
+  margin-bottom:0;
+}
+
+.policy-title{
+
+  display:flex;
+  align-items:center;
+  gap:18px;
+
+  margin-bottom:24px;
 
 }
 
 .policy-number{
 
-  width:56px;
-  height:56px;
+  width:58px;
+  height:58px;
 
   border-radius:18px;
+
+  background:rgba(0,177,79,.12);
 
   display:flex;
   align-items:center;
   justify-content:center;
-
-  background:rgba(0,177,79,.12);
 
   color:var(--primary);
 
   font-size:22px;
   font-weight:800;
 
-  margin-bottom:24px;
+  flex-shrink:0;
 
 }
 
-.policy-card h2{
+.policy-title h2{
 
-  font-size:32px;
-  margin-bottom:20px;
+  font-size:34px;
 
   color:var(--dark);
 
+  line-height:1.2;
+
 }
 
-.policy-card p{
+.policy-block p{
 
   color:var(--muted);
 
   line-height:2;
+
   font-size:16px;
 
-  margin-bottom:18px;
+  margin-bottom:20px;
 
 }
 
-.policy-card ul{
+.policy-block ul{
   padding-left:24px;
 }
 
-.policy-card li{
+.policy-block li{
 
   color:var(--muted);
 
   line-height:2;
-  margin-bottom:12px;
+
+  margin-bottom:10px;
 
 }
-
-/* =========================================
-   HIGHLIGHT
-========================================= */
 
 .highlight-box{
 
@@ -329,9 +329,7 @@ body{
 }
 
 .highlight-box p{
-
   margin-bottom:0;
-
 }
 
 /* =========================================
@@ -383,6 +381,7 @@ body{
 .contact-box h2{
 
   font-size:42px;
+
   margin-bottom:18px;
 
   position:relative;
@@ -392,9 +391,11 @@ body{
 .contact-box p{
 
   max-width:700px;
+
   margin:auto;
 
   line-height:1.9;
+
   opacity:.95;
 
   position:relative;
@@ -454,7 +455,7 @@ footer{
 
   .navbar{
     flex-direction:column;
-    gap:22px;
+    gap:20px;
   }
 
   .hero{
@@ -462,37 +463,54 @@ footer{
   }
 
   .hero h1{
-
-    font-size:40px;
+    font-size:42px;
     line-height:1.15;
-
   }
 
   .hero p{
-    font-size:17px;
+    font-size:16px;
   }
 
-  .policy-card{
+  .policy-section{
 
-    padding:28px;
+    padding:30px 24px;
 
     border-radius:28px;
 
   }
 
-  .policy-card h2{
+  .policy-title{
+
+    align-items:flex-start;
+
+    gap:14px;
+
+  }
+
+  .policy-title h2{
+
     font-size:26px;
+
+  }
+
+  .policy-block{
+    margin-bottom:40px;
   }
 
   .contact-box{
 
     padding:40px 24px;
+
     border-radius:28px;
 
   }
 
   .contact-box h2{
     font-size:30px;
+  }
+
+  .contact-info{
+    flex-direction:column;
   }
 
 }
@@ -534,37 +552,41 @@ footer{
     </h1>
 
     <p>
-      AntreUMKM berkomitmen untuk menjaga keamanan,
-      kerahasiaan, dan perlindungan data pengguna.
-      Halaman ini menjelaskan bagaimana data dikumpulkan,
-      digunakan, dan dilindungi dalam aplikasi AntreUMKM.
+      AntreUMKM berkomitmen menjaga keamanan,
+      kerahasiaan, dan perlindungan data seluruh pengguna.
     </p>
 
   </section>
 
-  <!-- POLICY -->
-  <div class="policy-wrapper">
+  <!-- SINGLE POLICY SECTION -->
+  <section class="policy-section">
 
     <!-- 1 -->
-    <div class="policy-card">
+    <div class="policy-block">
 
-      <div class="policy-number">
-        01
+      <div class="policy-title">
+
+        <div class="policy-number">
+          01
+        </div>
+
+        <h2>
+          Informasi yang Kami Kumpulkan
+        </h2>
+
       </div>
-
-      <h2>Informasi yang Kami Kumpulkan</h2>
 
       <p>
         AntreUMKM dapat mengumpulkan beberapa informasi
-        pengguna untuk mendukung layanan aplikasi agar
-        berjalan secara optimal dan realtime.
+        pengguna untuk mendukung layanan aplikasi
+        agar berjalan optimal dan realtime.
       </p>
 
       <ul>
 
         <li>Nama lengkap pengguna</li>
 
-        <li>Nomor telepon dan alamat email</li>
+        <li>Nomor telepon dan email</li>
 
         <li>Data perangkat dan sistem operasi</li>
 
@@ -577,13 +599,19 @@ footer{
     </div>
 
     <!-- 2 -->
-    <div class="policy-card">
+    <div class="policy-block">
 
-      <div class="policy-number">
-        02
+      <div class="policy-title">
+
+        <div class="policy-number">
+          02
+        </div>
+
+        <h2>
+          Penggunaan Informasi
+        </h2>
+
       </div>
-
-      <h2>Penggunaan Informasi</h2>
 
       <p>
         Data pengguna digunakan untuk meningkatkan
@@ -595,11 +623,11 @@ footer{
 
         <li>Mengelola sistem antrean digital realtime</li>
 
-        <li>Mengirim notifikasi antrean kepada pengguna</li>
+        <li>Mengirim notifikasi antrean</li>
 
         <li>Meningkatkan performa dan keamanan aplikasi</li>
 
-        <li>Menyediakan bantuan dan dukungan pengguna</li>
+        <li>Menyediakan bantuan pengguna</li>
 
         <li>Mencegah penyalahgunaan sistem</li>
 
@@ -607,7 +635,9 @@ footer{
 
       <div class="highlight-box">
 
-        <h4>Keamanan Pengguna</h4>
+        <h4>
+          Keamanan Pengguna
+        </h4>
 
         <p>
           AntreUMKM tidak menjual maupun menyebarkan
@@ -620,13 +650,19 @@ footer{
     </div>
 
     <!-- 3 -->
-    <div class="policy-card">
+    <div class="policy-block">
 
-      <div class="policy-number">
-        03
+      <div class="policy-title">
+
+        <div class="policy-number">
+          03
+        </div>
+
+        <h2>
+          Perlindungan Data
+        </h2>
+
       </div>
-
-      <h2>Perlindungan Data</h2>
 
       <p>
         Kami menerapkan sistem keamanan modern
@@ -639,24 +675,30 @@ footer{
 
         <li>Sistem autentikasi login aman</li>
 
-        <li>Pemantauan aktivitas sistem realtime</li>
+        <li>Pemantauan aktivitas realtime</li>
 
         <li>Pembatasan akses data internal</li>
 
-        <li>Pembaruan keamanan secara berkala</li>
+        <li>Pembaruan keamanan berkala</li>
 
       </ul>
 
     </div>
 
     <!-- 4 -->
-    <div class="policy-card">
+    <div class="policy-block">
 
-      <div class="policy-number">
-        04
+      <div class="policy-title">
+
+        <div class="policy-number">
+          04
+        </div>
+
+        <h2>
+          Hak Pengguna
+        </h2>
+
       </div>
-
-      <h2>Hak Pengguna</h2>
 
       <p>
         Setiap pengguna memiliki hak penuh atas
@@ -680,18 +722,23 @@ footer{
     </div>
 
     <!-- 5 -->
-    <div class="policy-card">
+    <div class="policy-block">
 
-      <div class="policy-number">
-        05
+      <div class="policy-title">
+
+        <div class="policy-number">
+          05
+        </div>
+
+        <h2>
+          Cookies dan Teknologi Pelacakan
+        </h2>
+
       </div>
-
-      <h2>Cookies dan Teknologi Pelacakan</h2>
 
       <p>
         AntreUMKM dapat menggunakan cookies atau
-        teknologi serupa untuk meningkatkan pengalaman
-        pengguna dan performa aplikasi.
+        teknologi serupa untuk meningkatkan pengalaman pengguna.
       </p>
 
       <ul>
@@ -709,35 +756,40 @@ footer{
     </div>
 
     <!-- 6 -->
-    <div class="policy-card">
+    <div class="policy-block">
 
-      <div class="policy-number">
-        06
+      <div class="policy-title">
+
+        <div class="policy-number">
+          06
+        </div>
+
+        <h2>
+          Perubahan Kebijakan Privasi
+        </h2>
+
       </div>
-
-      <h2>Perubahan Kebijakan Privasi</h2>
 
       <p>
         Kebijakan privasi dapat diperbarui sewaktu-waktu
         sesuai perkembangan layanan dan teknologi aplikasi.
-        Pengguna disarankan untuk memeriksa halaman ini
-        secara berkala.
       </p>
 
       <div class="highlight-box">
 
-        <h4>Tanggal Pembaruan</h4>
+        <h4>
+          Tanggal Pembaruan
+        </h4>
 
         <p>
-          Kebijakan privasi terakhir diperbarui pada
-          Mei 2026.
+          Kebijakan privasi terakhir diperbarui pada Mei 2026.
         </p>
 
       </div>
 
     </div>
 
-  </div>
+  </section>
 
   <!-- CONTACT -->
   <section class="contact-box">
@@ -747,8 +799,7 @@ footer{
     </h2>
 
     <p>
-      Jika Anda memiliki pertanyaan terkait kebijakan
-      privasi atau perlindungan data pengguna,
+      Jika Anda memiliki pertanyaan terkait kebijakan privasi,
       silakan hubungi tim support AntreUMKM.
     </p>
 
