@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
 <title>AntreUMKM - Aplikasi Antrian Digital Modern</title>
 <link rel="icon" type="image/png" href="image/logo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <style>
 
@@ -337,9 +336,10 @@ section{
   font-size:17px;
 }
 
+
 /* =====================================================
    FEATURES
-===================================================== */
+==================================================== */
 
 .features-grid{
   display:grid;
@@ -361,16 +361,16 @@ section{
   box-shadow:var(--shadow-md);
 }
 
-.feature-icon{
-  width:64px;
-  height:64px;
-  border-radius:20px;
-  background:rgba(30,91,255,.08);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:26px;
-  margin-bottom:24px;
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background: rgba(30,91,255,.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px; /* Ukuran icon */
+  margin-bottom: 24px;
 }
 
 .feature-card h3{
@@ -401,10 +401,9 @@ section{
   scroll-snap-type: x mandatory;
   gap: 30px;
   padding: 20px 10px 40px;
-  scrollbar-width: auto; /* Memunculkan scrollbar tipis estetik di desktop */
+  scrollbar-width: auto;
 }
 
-/* Gaya Scrollbar Penjelajah */
 .mockup-grid::-webkit-scrollbar {
   height: 8px;
 }
@@ -421,7 +420,7 @@ section{
 }
 
 .mockup-card{
-  flex: 0 0 calc(25% - 23px); /* 4 kolom pas pada desktop */
+  flex: 0 0 calc(25% - 23px);
   min-width: 270px;
   scroll-snap-align: start;
   background: transparent;
@@ -434,7 +433,6 @@ section{
   transform: translateY(-8px);
 }
 
-/* Bingkai Pembungkus Smartphone */
 .phone-case {
   background: #0d1117;
   border: 10px solid #1f2937;
@@ -447,7 +445,6 @@ section{
   margin-bottom: 20px;
 }
 
-/* Dynamic Island / Notch Speaker Kamera atas HP */
 .phone-case::before {
   content: "";
   position: absolute;
@@ -544,7 +541,7 @@ section{
 }
 
 /* =====================================================
-   POPUP
+   POPUP GLOBAL
 ===================================================== */
 
 .about-popup{
@@ -729,7 +726,6 @@ footer{
     border-radius: 10px;
   }
 
-  /* Hero Section Mobile */
   .hero {
     min-height: auto;
     grid-template-columns: 1fr;
@@ -776,7 +772,6 @@ footer{
     border-radius: 12px;
   }
 
-  /* Stats Container Mobile */
   .stats {
     justify-content: center;
     gap: 12px;
@@ -795,7 +790,6 @@ footer{
     font-size: 28px;
   }
 
-  /* Section Header Mobile */
   .section-header {
     margin-bottom: 36px;
   }
@@ -810,7 +804,6 @@ footer{
     margin-top: 10px;
   }
 
-  /* Features Grid Mobile */
   .features-grid {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -838,14 +831,13 @@ footer{
     font-size: 14px;
   }
 
-  /* Mockup Grid Mobile Touch Safe Slider */
   .mockup-grid {
     gap: 20px;
     padding-bottom: 20px;
   }
 
   .mockup-card {
-    flex: 0 0 280px; /* Menentukan lebar kartu HP yang pas saat di-swipe di mobile */
+    flex: 0 0 280px;
   }
 
   .phone-case {
@@ -853,7 +845,6 @@ footer{
     border-radius: 36px;
   }
 
-  /* About & Privacy Mobile */
   .about-app,
   .privacy-section {
     padding: 28px 20px;
@@ -872,7 +863,6 @@ footer{
     margin-bottom: 12px;
   }
 
-  /* Popup Mobile */
   .about-popup-box {
     padding: 28px 20px;
     border-radius: 24px;
@@ -887,7 +877,6 @@ footer{
     font-size: 14px;
   }
 
-  /* CTA Mobile */
   .cta {
     padding: 48px 20px;
     border-radius: 24px;
@@ -924,159 +913,83 @@ footer{
 <div class="container">
 
   <nav class="navbar">
-
     <a href="#" class="logo">
       <img src="image/logo.png" alt="">
       <h2>AntreUMKM</h2>
     </a>
-
     <div class="nav-menu">
       <a href="#home">Beranda</a>
       <a href="#features">Fitur</a>
       <a href="#mockup">Mockup</a>
       <a href="#privacy">Keamanan</a>
     </div>
-
-    <a href="#" class="nav-btn">
-      Download App
-    </a>
-
+    <a href="#" class="nav-btn">Download App</a>
   </nav>
 
   <section id="home" class="hero">
-
     <div>
-
-      <div class="hero-badge">
-        Sistem Antrian Digital Modern
-      </div>
-
-      <h1>
-        Kelola Antrian UMKM<br>
-        <span>Lebih Cepat</span> & Real Time
-      </h1>
-
-      <p>
-        AntreUMKM membantu bisnis dan UMKM mengatur sistem antrian digital secara realtime, modern, efisien, dan profesional.
-      </p>
-
+      <div class="hero-badge">Sistem Antrian Digital Modern</div>
+      <h1>Kelola Antrian UMKM<br><span>Lebih Cepat</span> & Real Time</h1>
+      <p>AntreUMKM membantu bisnis dan UMKM mengatur sistem antrian digital secara realtime, modern, efisien, dan profesional.</p>
       <div class="hero-buttons">
-
-        <a href="#" class="btn-primary">
-          Download Aplikasi
-        </a>
-
-        <a href="#" class="btn-secondary">
-          Lihat Demo
-        </a>
-
+        <a href="#" class="btn-primary">Download Aplikasi</a>
+        <a href="#" class="btn-secondary">Lihat Demo</a>
       </div>
-
       <div class="stats">
-
         <div class="stat-card">
           <h2>4.9★</h2>
           <p>Rating aplikasi</p>
         </div>
-
         <div class="stat-card">
           <h2>100K+</h2>
           <p>Pengguna aktif</p>
         </div>
-
         <div class="stat-card">
           <h2>24/7</h2>
           <p>Realtime online</p>
         </div>
-
       </div>
-
     </div>
-
     <div class="hero-right">
-
       <div class="glow"></div>
-
       <div class="phone-frame">
         <img src="image/logo.png" alt="">
       </div>
-
     </div>
-
   </section>
 
-  <section id="features">
-
+<section id="features">
     <div class="section-header">
-
       <span>FITUR UTAMA</span>
-
       <h2>Solusi Modern Untuk UMKM</h2>
-
-      <p>
-        Dirancang dengan teknologi realtime untuk membantu UMKM melayani pelanggan secara lebih efisien.
-      </p>
-
+      <p>Dirancang dengan teknologi realtime untuk membantu UMKM melayani pelanggan secara lebih efisien.</p>
     </div>
-
     <div class="features-grid">
-
       <div class="feature-card">
-
-        <div class="feature-icon">
-          ⚡
-        </div>
-
+        <div class="feature-icon"><i class="fa-solid fa-bolt" style="color: var(--primary);"></i></div>
         <h3>Realtime Monitoring</h3>
-
-        <p>
-          Pantau nomor antrean secara langsung setiap detiknya tanpa perlu memuat ulang halaman.
-        </p>
-
+        <p>Pantau nomor antrean secara langsung setiap detiknya tanpa perlu memuat ulang halaman.</p>
       </div>
-
       <div class="feature-card">
-
-        <div class="feature-icon">
-          🔔
-        </div>
-
+        <div class="feature-icon"><i class="fa-solid fa-bell" style="color: var(--primary);"></i></div>
         <h3>Smart Notification</h3>
-
-        <p>
-          Notifikasi otomatis yang langsung dikirimkan ke perangkat ketika giliran antrean hampir dipanggil.
-        </p>
-
+        <p>Notifikasi otomatis yang langsung dikirimkan ke perangkat ketika giliran antrean hampir dipanggil.</p>
       </div>
-
       <div class="feature-card">
-
-        <div class="feature-icon">
-          🔒
-        </div>
-
+        <div class="feature-icon"><i class="fa-solid fa-shield-halved" style="color: var(--primary);"></i></div>
         <h3>Keamanan Data</h3>
-
-        <p>
-          Seluruh data transaksi dan informasi pengguna dijamin aman dengan protokol enkripsi modern.
-        </p>
-
+        <p>Seluruh data transaksi dan informasi pengguna dijamin aman dengan protokol enkripsi modern.</p>
       </div>
-
     </div>
-
   </section>
 
   <section id="mockup">
-
     <div class="section-header">
       <span>UI MOCKUP</span>
       <h2>Pengalaman Pengguna Modern</h2>
     </div>
-
     <div class="mockup-wrapper">
       <div class="mockup-grid">
-
         <div class="mockup-card">
           <div class="phone-case">
             <img src="image/logo.png" alt="Login Pengguna">
@@ -1086,7 +999,6 @@ footer{
             <p>Sistem login modern.</p>
           </div>
         </div>
-
         <div class="mockup-card">
           <div class="phone-case">
             <img src="image/logo.png" alt="Ambil Antrean">
@@ -1096,7 +1008,6 @@ footer{
             <p>Ambil nomor antrean digital.</p>
           </div>
         </div>
-
         <div class="mockup-card">
           <div class="phone-case">
             <img src="image/logo.png" alt="Monitoring Realtime">
@@ -1106,7 +1017,6 @@ footer{
             <p>Status antrean realtime.</p>
           </div>
         </div>
-
         <div class="mockup-card">
           <div class="phone-case">
             <img src="image/logo.png" alt="Notifikasi Pintar">
@@ -1116,156 +1026,211 @@ footer{
             <p>Pemberitahuan otomatis.</p>
           </div>
         </div>
-
       </div>
     </div>
-
   </section>
 
   <section id="about" class="about-app">
     <div class="section">
-      <hr class="divider" style="margin-top:0">
       <div class="about-section">
         <h2 class="section-title">Tentang Aplikasi</h2>
         <div class="about-text">
-          AntreUMKM adalah platform antrean digital modern yang membantu UMKM mengelola pelanggan dengan lebih cepat, efisien, dan profesional.
+          <b>AntreUMKM : Aplikasi Manajemen Antrean Digital Real-Time</b> hadir untuk membantu pengguna mengambil nomor antrean langsung dari smartphone. Tidak perlu menunggu lama di tempat, cukup pilih layanan, ambil tiket digital, lalu pantau antrean secara real-time kapan saja.
         </div>
         <div class="about-text">
-          Aplikasi ini menyediakan nomor antrean digital, pemantauan status real-time, dan notifikasi otomatis sehingga pelanggan tidak perlu menunggu terlalu lama.
+          Dengan tampilan sederhana dan mudah digunakan, aplikasi ini memudahkan pelanggan mengetahui nomor antrean, sisa antrean, estimasi waktu tunggu, hingga status layanan secara langsung. Tiket digital berbasis QR Code juga mempermudah proses verifikasi saat tiba di lokasi.
         </div>
-        <div class="about-text" id="extra-about" style="display:none">
-          Fitur admin mendukung pengelolaan beberapa loket, laporan layanan, dan kontrol penuh atas pengalaman pelanggan untuk operasi yang lebih teratur.
-        </div>
-        <span class="read-more" onclick="toggleAbout()">Selengkapnya ▾</span>
+        <span class="read-more" onclick="openAboutPopupFunc()">Selengkapnya ▾</span>
       </div>
-      <hr class="divider">
     </div>
   </section>
 
   <section id="privacy" class="privacy-section">
     <div class="section">
-      <hr class="divider" style="margin-top:0">
       <div class="about-section">
-        <h2 class="section-title">Kebijakan Privasi</h2>
+        <h2 class="section-title">Kebijakan Privasi & Perlindungan Data</h2>
         <div class="about-text">
-          AntreUMKM berkomitmen untuk melindungi privasi dan keamanan data Anda. Informasi yang dikumpulkan digunakan hanya untuk meningkatkan layanan antrean dan memberikan pengalaman pengguna yang lebih baik.
+          Selamat datang di <b>AntreUMKM</b>. Kami berkomitmen penuh untuk melindungi privasi, kerahasiaan, dan keamanan data pribadi pengguna kami, baik pemilik usaha (mitra) maupun pelanggan akhir.
         </div>
         <div class="about-text">
-          Kami tidak membagikan data pribadi ke pihak ketiga tanpa izin Anda, kecuali jika diwajibkan oleh hukum. Setiap akses data dibatasi hanya untuk tim yang berwenang dan diamankan dengan teknologi enkripsi.
+          Seluruh data yang Anda percayakan kepada kami dijamin aman dengan protokol enkripsi modern dan dikelola secara legal sesuai regulasi yang berlaku.
         </div>
-        <div class="about-text">
-          Pengguna berhak mengetahui data yang disimpan, memperbarui informasi, dan meminta penghapusan jika diperlukan. Kami juga menerapkan kebijakan keamanan berkala untuk menjaga integritas dan kerahasiaan informasi.
-        </div>
+        <span class="read-more" onclick="openPrivacyPopupFunc()">Baca Selengkapnya ▾</span>
       </div>
-      <hr class="divider">
     </div>
   </section>
 
-  <div class="about-popup" id="aboutPopup">
-
-    <div class="about-popup-box">
-
-      <span class="close-about-popup">
-        &times;
-      </span>
-
-      <h2>
-        Tentang AntreUMKM
-      </h2>
-
-      <p>
-        AntreUMKM membantu UMKM meningkatkan kualitas pelayanan pelanggan melalui sistem antrean digital realtime.
-      </p>
-
-      <ul>
-        <li>Monitoring realtime</li>
-        <li>Notifikasi otomatis</li>
-        <li>Sistem aman dan terenkripsi</li>
-        <li>Tampilan modern</li>
-        <li>Mudah digunakan</li>
-      </ul>
-
-    </div>
-
-  </div>
-
   <section class="cta">
-
-    <h2>
-      Mulai Digitalisasi UMKM Anda
-    </h2>
-
-    <p>
-      Tingkatkan pelayanan pelanggan dengan sistem antrean digital modern yang cepat dan terintegrasi.
-    </p>
-
-    <a href="#" class="cta-btn">
-      Download Sekarang
-    </a>
-
+    <h2>Mulai Digitalisasi UMKM Anda</h2>
+    <p>Tingkatkan pelayanan pelanggan dengan sistem antrean digital modern yang cepat dan terintegrasi.</p>
+    <a href="#" class="cta-btn">Download Sekarang</a>
   </section>
 
   <footer>
     © 2026 AntreUMKM • Sistem Antrian Digital Modern
   </footer>
 
+</div> <div class="about-popup" id="aboutPopup">
+  <div class="about-popup-box" style="max-width: 680px; max-height: 85vh; overflow-y: auto;">
+    <span class="close-about-popup" id="closeAboutPopup">&times;</span>
+    <h2>Tentang Aplikasi</h2>
+    
+    <p>
+      <b>Aplikasi Manajemen Antrean Digital Real-Time</b> adalah solusi modern untuk membantu proses antrean menjadi lebih praktis, efisien, dan terorganisir. Aplikasi ini dirancang untuk memudahkan pelanggan dalam mengambil nomor antrean secara online tanpa harus datang dan menunggu lama di lokasi. Dengan sistem digital, pengguna dapat memantau antrean secara langsung melalui smartphone sehingga pengalaman menunggu menjadi lebih nyaman dan fleksibel.
+    </p>
+    <p>
+      Pengguna cukup memilih layanan yang tersedia, seperti customer service atau pembayaran, kemudian mengambil nomor antrean secara otomatis. Setelah nomor diperoleh, aplikasi akan menampilkan tiket digital lengkap dengan QR Code sebagai identitas antrean. Tiket ini dapat digunakan saat check-in atau verifikasi di lokasi layanan. Selain itu, pengguna juga dapat melihat sisa antrean, estimasi waktu tunggu, serta status antrean secara real-time, sehingga dapat memperkirakan kapan giliran mereka dipanggil.
+    </p>
+    <p>
+      Aplikasi ini juga dilengkapi fitur notifikasi dan informasi terbaru, seperti promo layanan, pengumuman penting, atau perubahan status antrean. Dengan adanya fitur ini, pengguna tetap mendapatkan informasi terkini tanpa harus terus memantau secara manual. Tampilan antarmuka dibuat sederhana, responsif, dan mudah digunakan oleh semua kalangan.
+    </p>
+    <p>
+      Tidak hanya untuk pelanggan, aplikasi ini menyediakan dashboard khusus bagi staf atau admin untuk mengelola proses antrean secara real-time. Petugas dapat melihat nomor antrean yang sedang dilayani, memanggil antrean berikutnya, mengulang panggilan, melewati antrean tertentu, hingga menandai antrean selesai. Sistem ini membantu petugas bekerja lebih teratur dan mengurangi kesalahan saat proses pelayanan berlangsung.
+    </p>
+    <p>
+      Selain pengelolaan antrean, tersedia juga fitur analitik untuk memantau performa layanan. Admin dapat melihat jumlah antrean yang masuk, rata-rata waktu pelayanan, dan data operasional lainnya. Informasi ini berguna untuk membantu pemilik usaha atau pengelola mengambil keputusan yang lebih baik dalam meningkatkan kualitas pelayanan.
+    </p>
+
+    <h3 style="font-size: 16px; font-weight: 700; margin: 20px 0 10px; color: var(--dark);">Fitur unggulan aplikasi:</h3>
+    <ul>
+      <li>Pengambilan nomor antrean secara online</li>
+      <li>Pemantauan antrean secara real-time</li>
+      <li>Tiket digital berbasis QR Code</li>
+      <li>Informasi sisa antrean dan estimasi waktu tunggu</li>
+      <li>Pembatalan antrean langsung dari aplikasi</li>
+      <li>Notifikasi status dan informasi layanan</li>
+      <li>Dashboard staf untuk kontrol antrean</li>
+      <li>Analitik data layanan dan performa operasional</li>
+      <li>Antarmuka sederhana dan mudah digunakan</li>
+    </ul>
+
+    <p style="margin-top: 18px;">
+      Aplikasi ini cocok digunakan untuk UMKM, toko retail, layanan pelanggan, kasir, maupun berbagai jenis usaha yang membutuhkan sistem antrean digital. Dengan teknologi real-time, proses pelayanan menjadi lebih cepat, pelanggan lebih nyaman, dan pengelolaan usaha menjadi lebih modern.
+    </p>
+  </div>
 </div>
+
+<div class="about-popup" id="privacyPopup">
+  <div class="about-popup-box" style="max-width: 700px; max-height: 85vh; overflow-y: auto;">
+    <span class="close-about-popup" id="closePrivacyPopup">&times;</span>
+    <h2>Kebijakan Privasi & Perlindungan Data</h2>
+    <p>
+      Selamat datang di <b>AntreUMKM</b>. Kami berkomitmen penuh untuk melindungi privasi, kerahasiaan, dan keamanan data pribadi pengguna kami, baik pemilik usaha (mitra) maupun pelanggan akhir. Kebijakan Privasi ini dirancang untuk membantu Anda memahami bagaimana kami mengumpulkan, menggunakan, mengungkapkan, dan menjaga informasi yang Anda percayakan kepada kami sesuai dengan regulasi perlindungan data yang berlaku.
+    </p>
+
+    <h3 style="font-size: 16px; font-weight: 700; margin: 20px 0 10px; color: var(--dark);">1. Informasi yang Kami Kumpulkan</h3>
+    <p>Kami mengumpulkan beberapa jenis informasi untuk menyediakan dan meningkatkan layanan antrean digital kami:</p>
+    <ul>
+      <li><b>Informasi Akun:</b> Nama lengkap, alamat email, nomor telepon, dan kata sandi yang dienkripsi saat Anda mendaftar.</li>
+      <li><b>Informasi Bisnis (Khusus Mitra):</b> Nama UMKM, alamat operasional, jenis usaha, dan data konfigurasi loket antrean.</li>
+      <li><b>Data Aktivitas Antrean:</b> Riwayat pengambilan nomor antrean, waktu tunggu, durasi pelayanan, dan status kehadiran pelanggan.</li>
+      <li><b>Data Teknis Perangkat:</b> Alamat IP, jenis perangkat, sistem operasi, serta log sistem otomatis saat Anda mengakses aplikasi.</li>
+    </ul>
+
+    <h3 style="font-size: 16px; font-weight: 700; margin: 20px 0 10px; color: var(--dark);">2. Bagaimana Kami Menggunakan Data Anda</h3>
+    <p>Seluruh data yang dikumpulkan diproses secara legal demi kepentingan operasional berikut:</p>
+    <ul>
+      <li>Mengelola dan memproses nomor antrean secara <i>real-time</i>.</li>
+      <li>Mengirimkan notifikasi pintar atau pengingat otomatis ketika giliran panggilan Anda sudah dekat.</li>
+      <li>Menyediakan statistik performa pelayanan dan laporan analitik berkala bagi pemilik UMKM.</li>
+      <li>Mendeteksi, mencegah, dan menangani masalah teknis, kecurangan, atau aktivitas ilegal di dalam sistem.</li>
+    </ul>
+
+    <h3 style="font-size: 16px; font-weight: 700; margin: 20px 0 10px; color: var(--dark);">3. Keamanan dan Enkripsi Data</h3>
+    <p>Keamanan data Anda adalah prioritas utama kami. AntreUMKM menerapkan standar keamanan berlapis menggunakan protokol enkripsi modern (seperti HTTPS dan SSL/TLS) untuk melindungi data Anda dari akses, perubahan, pengungkapan, atau penghancuran tanpa izin.</p>
+
+    <h3 style="font-size: 16px; font-weight: 700; margin: 20px 0 10px; color: var(--dark);">4. Pengungkapan kepada Pihak Ketiga</h3>
+    <p>Kami menjamin bahwa <b>kami tidak akan menjual, menyewakan, membagikan, atau memperdagangkan data pribadi Anda</b> kepada pihak ketiga mana pun tanpa persetujuan eksplisit dari Anda.</p>
+
+    <h3 style="font-size: 16px; font-weight: 700; margin: 20px 0 10px; color: var(--dark);">5. Hak-Hak Pengguna</h3>
+    <ul>
+      <li><b>Hak Akses & Koreksi:</b> Anda berhak melihat dan memperbarui informasi profil akun Anda kapan saja melalui menu pengaturan.</li>
+      <li><b>Hak Penghapusan:</b> Anda dapat mengajukan permintaan resmi untuk menghapus seluruh data pribadi dari sistem kami secara permanen.</li>
+    </ul>
+
+    <h3 style="font-size: 16px; font-weight: 700; margin: 20px 0 10px; color: var(--dark);">6. Kebijakan Cookies</h3>
+    <p>Aplikasi dan situs kami menggunakan <i>cookies</i> untuk mengingat sesi masuk Anda, menyimpan preferensi tampilan, serta menganalisis lalu lintas platform.</p>
+
+    <h3 style="font-size: 16px; font-weight: 700; margin: 20px 0 10px; color: var(--dark);">7. Perubahan Kebijakan Privasi</h3>
+    <p>Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Dengan terus menggunakan layanan AntreUMKM, Anda dianggap menyetujui ketentuan privasi yang paling mutakhir.</p>
+  </div>
+</div>
+
 
 <script>
 
-/* =====================================================
-   POPUP
-===================================================== */
-
-const aboutPopup =
-  document.getElementById("aboutPopup");
-
-const openAboutPopup =
-  document.getElementById("openAboutPopup");
-
-const closeAboutPopup =
-  document.querySelector(".close-about-popup");
-
-/* OPEN */
-if(openAboutPopup) {
-  openAboutPopup.addEventListener("click", () => {
+// 1. Fungsi pemicu pembukaan popup (Dipanggil via onclick HTML)
+window.openAboutPopupFunc = function() {
+  const aboutPopup = document.getElementById("aboutPopup");
+  if (aboutPopup) {
     aboutPopup.classList.add("active");
     document.body.style.overflow = "hidden";
+  }
+};
+
+window.openPrivacyPopupFunc = function() {
+  const privacyPopup = document.getElementById("privacyPopup");
+  if (privacyPopup) {
+    privacyPopup.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+};
+
+// 2. Logika penutupan setelah dokumen termuat sempurna
+document.addEventListener("DOMContentLoaded", () => {
+  const aboutPopup = document.getElementById("aboutPopup");
+  const privacyPopup = document.getElementById("privacyPopup");
+  
+  const closeAboutPopup = document.getElementById("closeAboutPopup");
+  const closePrivacyPopup = document.getElementById("closePrivacyPopup");
+
+  /* Event klik tombol silang (X) */
+  if (closeAboutPopup) {
+    closeAboutPopup.addEventListener("click", () => {
+      aboutPopup.classList.remove("active");
+      checkRemainingPopups();
+    });
+  }
+
+  if (closePrivacyPopup) {
+    closePrivacyPopup.addEventListener("click", () => {
+      privacyPopup.classList.remove("active");
+      checkRemainingPopups();
+    });
+  }
+
+  /* Event klik di area luar hitam transparan */
+  window.addEventListener("click", (e) => {
+    if (e.target === aboutPopup) {
+      aboutPopup.classList.remove("active");
+      checkRemainingPopups();
+    }
+    if (e.target === privacyPopup) {
+      privacyPopup.classList.remove("active");
+      checkRemainingPopups();
+    }
   });
-}
-
-/* CLOSE */
-closeAboutPopup.addEventListener("click", () => {
-  aboutPopup.classList.remove("active");
-  document.body.style.overflow = "auto";
 });
 
-/* CLICK OUTSIDE */
-aboutPopup.addEventListener("click", (e) => {
-  if(e.target === aboutPopup){
-    aboutPopup.classList.remove("active");
-    document.body.style.overflow = "auto";
-  }
-});
-
-/* ESC */
+/* Event klik tombol fisik ESC Keyboard */
 document.addEventListener("keydown", (e) => {
-  if(e.key === "Escape"){
-    aboutPopup.classList.remove("active");
-    document.body.style.overflow = "auto";
+  if (e.key === "Escape") {
+    const aboutPopup = document.getElementById("aboutPopup");
+    const privacyPopup = document.getElementById("privacyPopup");
+    
+    if (aboutPopup) aboutPopup.classList.remove("active");
+    if (privacyPopup) privacyPopup.classList.remove("active");
+    checkRemainingPopups();
   }
 });
 
-/* TOGGLE ABOUT */
-function toggleAbout(){
-  const el=document.getElementById('extra-about');
-  const btn=event.target;
-  if(el.style.display==='none'){
-    el.style.display='block';
-    btn.textContent='Lebih sedikit ▴';
-  } else {
-    el.style.display='none';
-    btn.textContent='Selengkapnya ▾';
+/* Fungsi pembantu reset scrollbar utama halaman */
+function checkRemainingPopups() {
+  const aboutActive = document.getElementById("aboutPopup")?.classList.contains("active");
+  const privacyActive = document.getElementById("privacyPopup")?.classList.contains("active");
+  
+  if (!aboutActive && !privacyActive) {
+    document.body.style.overflow = "auto";
   }
 }
 
